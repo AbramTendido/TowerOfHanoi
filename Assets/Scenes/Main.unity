@@ -1068,7 +1068,6 @@ GameObject:
   m_Component:
   - component: {fileID: 661334649}
   - component: {fileID: 661334648}
-  - component: {fileID: 661334650}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: Untagged
@@ -1098,6 +1097,7 @@ MonoBehaviour:
     type: 3}
   diskAmountSO: {fileID: 11400000, guid: 88f42bd968cf7a345b8615273b859c46, type: 2}
   moveCountSO: {fileID: 11400000, guid: b1592d350ecb10b4694c4a480f6c0009, type: 2}
+  currentScene: {fileID: 11400000, guid: ff8e56d4181d87949bc8cd326f5dfa59, type: 2}
   spriteDrawMode: 1
   stumpScale: 0.4
 --- !u!4 &661334649
@@ -1114,36 +1114,6 @@ Transform:
   m_Father: {fileID: 1421376342}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &661334650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 661334647}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cd014f646cd05a4fa9cec71250c9901, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  disk: {fileID: 8399011212269539787, guid: 0160a079335e61a429848b49a1644816, type: 3}
-  leftPeg: {fileID: 769327698}
-  middlePeg: {fileID: 1197952745}
-  rightPeg: {fileID: 389425128}
-  treeStumpSprite: {fileID: -8216798482912588252, guid: 273f6bab13e4fd649bd2da8060af6ced,
-    type: 3}
-  peg: {fileID: -8216798482912588252, guid: 273f6bab13e4fd649bd2da8060af6ced, type: 3}
-  drawMode: 1
-  counterText: {fileID: 0}
-  statusText: {fileID: 0}
-  winDuration: 5
-  helpDuration: 5
-  treeStumps:
-  - {fileID: 769327698}
-  - {fileID: 1197952745}
-  - {fileID: 389425128}
-  diskAmountSO: {fileID: 11400000, guid: 88f42bd968cf7a345b8615273b859c46, type: 2}
-  scaleFact: 0.4
 --- !u!1 &769327698
 GameObject:
   m_ObjectHideFlags: 0

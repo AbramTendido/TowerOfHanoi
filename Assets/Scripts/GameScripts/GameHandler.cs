@@ -10,6 +10,7 @@ public class GameHandler : MonoBehaviour
 
     public DiskAmount diskAmountSO;
     public MoveCount moveCountSO;
+    public CurrentScene currentScene;
 
     [SerializeField]
     private SpriteDrawMode spriteDrawMode = SpriteDrawMode.Sliced;
@@ -25,6 +26,9 @@ public class GameHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentScene.scene = Scene.Game;
+        AudioManager.instance.PlayBG();
+
         //Make gameDisks
         DiskSpawn();
 

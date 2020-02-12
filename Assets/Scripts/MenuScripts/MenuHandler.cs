@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
@@ -10,10 +7,13 @@ public class MenuHandler : MonoBehaviour
 
     public TextMeshProUGUI diskAmountText;
     public DiskAmount diskAmountSO;
+    public CurrentScene currentScene;
 
     // Start is called before the first frame update
     void Start()
     {
+        currentScene.scene = Scene.MainMenu;
+        AudioManager.instance.PlayBG();
         DisplayDiskAmount();
     }
 
